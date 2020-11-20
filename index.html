@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>javascript/jQuery1回目</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<body>
+  <!-- この中に記述していく -->
+  <!-- ここから下にコードを書く -->
+
+
+
+  <!-- タイトル -->
+  <h1 class="title" id="title">60文字日記</h1>
+
+  <!-- 遷移ボタン -->
+  <div class="history">
+  <a href="#history" > 過去一覧へ</a>
+  <br>
+  <br>
+  <a href="#delete" > 削除画面へ</a>
+  </div>
+
+<!-- 日付選択 -->
+<div class="wrapall">
+
+  <div class="wrapcal">
+    <div class=calendar>
+      <div id="datepicker">
+        <br/>
+        <p>日付: <input type="text" id="date_val"/></p>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 入力欄 -->
+    <div class="wraptext">
+      <div class="textarea">
+        <textarea name="textarea" rows="20" cols="60" id="textarea" maxlength='60' placeholder='日付を先に選択してください。60文字以内でまとめてね！'></textarea>
+      </div>
+      <input type="submit" value="保存" class="savebtn" id="savebtn" style="display: none;">
+    </div>
+
+</div>
+
+
+<!-- 過去一覧　タイトル -->
+<h1 class="title" id="history">過去一覧</h1>
+<div class='memo'></div>
+
+<!-- 遷移ボタン -->
+<div class="history">
+  <a href="#title" > 入力へ</a>
+  <br>
+  <br>
+  <a href="#delete" > 削除画面へ</a>
+
+</div>
+
+<!-- 過去一覧　表 -->
+<ul id="list" class="list" >
+
+</ul>
+
+
+<!-- 削除エリア　タイトル -->
+
+<h1 class="title" id="delete">削除</h1>
+<div class='memo'></div>
+
+<!-- 遷移ボタン -->
+<div class="history">
+  <a href="#title" > 入力へ</a>
+<br>
+<br>
+  <a href="#history" > 過去一覧へ</a>
+</div>
+
+<!-- 削除年月日指定エリア、削除ボタン -->
+<div class="delete">
+<p>削除したい年月日を入力</p>
+<input type="text"  placeholder="YYYY-MM-DD"class="deletebox" id="deletebox" >
+<button id="delete-one">年月日指定削除</button>
+<br><br><br><br><br><br>
+
+<!-- 全削除ボタン -->
+<button id="delete-all" class="end">履歴全削除</button>
+</div>
+
+
+
+  <!-- ここから上にコードを書く -->
+  <!-- この中に記述していく -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/test.js"></script>
+</body>
+
+</html>
